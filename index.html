@@ -1,8 +1,29 @@
 <html>
 <header>
-<title>TEST</title>
+	<style>
+		.heading01 {
+			position: relative;
+			font-size: 26px;
+			text-align: center;
+			border-bottom: 5px solid #f6f6f6;
+		}
+
+		.heading01::after {
+			content: '';
+			position: absolute;
+			bottom: -5px;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 70px;
+			height: 5px;
+			background-color: #387ccc;
+		}
+	</style>
+
+  <title>備忘録</title>
 </header>
 <body>
-test
+	<h1 class="heading01">備忘録</h1>
+テスト
 </body>
 </html>
